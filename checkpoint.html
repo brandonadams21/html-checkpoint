@@ -1,0 +1,80 @@
+<!DOCTYPE>
+<HTML>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>GMDB Login Page</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+
+  <body>
+    <header>
+      <div class="topnav">
+        <nav>
+          <a class="active" href="GMDB">GMDB</a>
+          <a class="active" href="#home">Home</a>
+          <a href="#Login">Login</a>
+          <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search" title="Type in a movie">
+          <button>
+            Search
+          </button>
+        </nav>
+      </div>
+      <ul id="myUL">
+        <li><a href="https://en.wikipedia.org/wiki/Star_Wars#:~:text=The%20story%20of%20the%20original,clutches%20of%20the%20Galactic%20Empire.">Star Wars<br><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpvI-HurM4TPtXoM-N6OWa7K_V3xKmCmckMw&usqp=CAU" width="" height="300"></a></li>
+
+
+        <li><a href="https://en.wikipedia.org/wiki/Star_Trek_(film)">Star Trek<br><img src="https://i.pinimg.com/originals/7a/1e/53/7a1e53b5b921aee206bb695f24174524.jpg" width="" height="300"></a></li>
+
+        <li><a href="https://en.wikipedia.org/wiki/Dumb_and_Dumber">Dumb and Dumber<br><img src="https://i5.walmartimages.com/asr/7a2f4420-6423-4166-9e21-f0557b5eea3d.11d9b27d0330732ee315772b4d958e2f.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF" width="" height="300"></a></li>
+
+
+        <li><a href="https://en.wikipedia.org/wiki/Django_Unchained">Django Unchained <br><img src="https://cdn.shopify.com/s/files/1/0969/9128/products/Django_Unchained_-_Fan_Art_-_Quentin_Tarantino_-_Hollywood_Movie_Poster_Collection_4d725507-ab63-456f-b8fc-8f07753484cb.jpg?v=1573214204" width="" height="300"></a></li>
+
+        <li><a href="https://en.wikipedia.org/wiki/The_Godfather">Godfather <br><img src="https://i5.walmartimages.com/asr/78a3e5a2-7fc6-48cc-8e10-6cca43ac24cb_1.4da8d938390bb3ce6c4756f512cd8bae.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF" width="" height="300"></a></li>
+
+
+        <li><a href="https://en.wikipedia.org/wiki/Jackass_Presents:_Bad_Grandpa">Bad Grandpa <br><img src="https://i0.wp.com/www.heyuguys.com/images/2013/10/bad-grandpa.jpg?resize=580%2C442" width="" height="200"></a></li>
+
+
+        <li><a href="https://en.wikipedia.org/wiki/Goodfellas">Goodfellas <br><img src="https://m.media-amazon.com/images/I/81NuuGhiNmL._SL1500_.jpg" width="" height="300"></a></li>
+      </ul>
+      <script>
+        function myFunction() {
+          var input, filter, ul, li, a, i, txtValue;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          ul = document.getElementById("myUL");
+          li = ul.getElementsByTagName("li");
+          for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              li[i].style.display = "";
+            } else {
+              li[i].style.display = "none";
+            }
+          }
+        }
+
+      </script>
+
+      <div>
+      
+
+  <form>
+      <label>Login</label><br><br>
+    <label for="email">Email:</label><br>
+    <input id="email" type="text" value="" name="email" required><br><br>
+    <label for="password">Password:</label><br>
+    <input type="password" placeholder="" name="password" required /><br>
+    <button>
+      Login
+    </button>
+  </form>
+</div>
+</header>
+</body>
+</HTML>

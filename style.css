@@ -1,0 +1,48 @@
+.Link.com {
+    display: none;
+    }
+    
+    .topnav {
+      overflow: hidden;
+      background-color: Grey;
+    }
+
+    .topnav a{
+        float: left;
+  display: block;
+  color: white;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+    }
+    .topnav button {
+        background-color: white;
+      float: right;
+      padding: 6px;
+      border: none;
+      margin-top: 8px;
+      margin-right: 16px;
+      font-size: 17px;
+    }
+.topnav input[type=text] {
+    background-color: white;
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+  
+}
+
+
+    form {
+        position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: none;
+    }
